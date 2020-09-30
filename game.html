@@ -33,9 +33,9 @@
         document.addEventListener('keydown',keyDown);
         document.addEventListener('keyup',keyUp);
 
-        function keyDown(k){
+        function keyDown(e){
             k.preventDefault();
-            keys[k.key]=true;
+            keys[e.key]=true;
         }
 
         function keyUp(e){
